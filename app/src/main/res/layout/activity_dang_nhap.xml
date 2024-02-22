@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangNhapActivity"
+    android:background="#9F67F9">
+       <!-- ImageView for Logo -->
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toobarDN"
+            app:title="Thoát"
+            android:background="#9F67F9"
+            app:titleTextColor="#ffff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            ></androidx.appcompat.widget.Toolbar>
+        <!-- ImageView for Logo -->
+        <ImageView
+            android:id="@+id/txtDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/dang_nhap"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+       <LinearLayout
+           android:paddingTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:background="#9F67F9"
+           android:orientation="vertical"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/line1">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="15dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email..."
+                android:textColor="#9747FF"
+                android:drawablePadding="10dp"
+                android:textColorHint="#9747FF"
+                android:drawableStart="@drawable/outline_account_circle_24"
+                android:paddingHorizontal="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_box_shadow_in"/>
+           <EditText
+               android:id="@+id/password"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_marginHorizontal="15dp"
+               android:inputType="textPassword"
+               android:hint="Password..."
+               android:drawablePadding="10dp"
+               android:textColorHint="#9747FF"
+               android:textColor="#9747FF"
+               android:drawableStart="@drawable/outline_vpn_key_24"
+               android:paddingHorizontal="10dp"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:background="@drawable/rounded_box_shadow_in"/>
+              <!-- Button for Login -->
+           <TextView
+               android:id="@+id/Qpassword"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:paddingLeft="15dp"
+               android:paddingTop="10dp"
+               android:text="Quên mật khẩu!"
+               />
+              <Button
+                  android:id="@+id/buttonLogin"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:text="Đăng nhập"
+                  android:textStyle="bold"
+                  android:textSize="18dp"
+                  android:drawableEnd="@drawable/baseline_input_24"
+                  android:layout_marginTop="24dp"
+                  android:layout_marginBottom="20dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  android:paddingHorizontal="50dp"
+                  android:background="@drawable/rounded_box_shadow"
+                  />
+           <TextView
+               android:id="@+id/Dangky"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:text="Đăng ký tài khoản!"
+               />
+       </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

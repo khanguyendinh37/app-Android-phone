@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LienHeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="49dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toobar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#9F67F9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Liên hệ"
+            app:titleTextColor="#ffff">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_box_shadow_in"
+            android:drawableStart="@drawable/outline_account_circle_24"
+            android:drawablePadding="10dp"
+            android:hint="Email..."
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="10dp"
+            android:textColor="#9747FF"
+            android:textColorHint="#9747FF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập nội dung..."
+            android:textColorHint="#9747FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+            android:minLines="5"
+            android:gravity="top|start"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:background="@drawable/rounded_box_shadow_in"/>
+        <Button
+            android:id="@+id/Gui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gửi"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingHorizontal="50dp"
+            android:background="@drawable/rounded_box_shadow"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
